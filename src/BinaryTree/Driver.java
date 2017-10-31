@@ -15,6 +15,10 @@ public class Driver {
         bt.postOrder();
         System.out.print("\nClone Post order : ");
         bt.clonepostorder();
+        System.out.print("\nInfix : ");
+        bt.infix();
+        System.out.print("\nPostfix : ");
+        bt.postfix();
         BinaryTreeTraverse btt = new BinaryTreeTraverse();
         //btt.clone(bt);
         

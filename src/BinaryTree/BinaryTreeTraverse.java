@@ -73,6 +73,29 @@ public class BinaryTreeTraverse implements Cloneable{
         postOrder();
     }
     
+    public void infix(){
+        infix(root);
+    }
+    public static void infix(BinaryTreeNode t){
+        if(t != null){
+            infix(t.leftChild);
+            System.out.print(t.element);
+            infix(t.rightChild);
+        }
+    }
+    
+    public void postfix(){
+        postfix(root);
+    }
+    public static void postfix(BinaryTreeNode t){
+        if(t != null){
+            infix(t.leftChild);
+            infix(t.rightChild);
+            System.out.print(t.element);
+        }
+    }
+    
+    
 //    public static void infix(BinaryTreeNode t) {
 //        if(t != null){
 //            System.out.println("(");
